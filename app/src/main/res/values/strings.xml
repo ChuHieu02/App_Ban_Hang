@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Kiot-Demo</string>
+    <!--navigation-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!---->
+    <string name="Admin">Admin</string>
+    <string name="chinhanh">Chi nhánh</string>
+    <string name="banhang">Bán hàng</string>
+    <string name="lichsubanhang">Lịch sử đơn hàng</string>
+    <string name="trahang">Trả hàng</string>
+    <string name="lapphieuthu">Lập phiếu thu</string>
+    <string name="baocaohanggay">Báo cáo hàng ngày</string>
+    <string name="quanly">Quản Lý</string>
+    <string name="dangxuat">Đăng xuất</string>
+    <string name="caidat">Cài đặt</string>
+    <string name="chatkiot">Chat với Kiotviet</string>
+    <string name="dieukhoan">Điều khoản</string>
+    <string name="goi">Gọi 18006162(miễn cước)</string>
+    <string name="title_sp">Tên sản phẩm</string>
+    <string name="code_sp">Mã sản phẩm</string>
+    <string name="price_sp">10,000</string>
+    <string name="number_sp">0</string>
+    <!---->
+    <string name="name_ban_hang">Lựa chọn bán hàng</string>
+    <string name="search">Nhập tên, mã, Serial/IMEL, lô, hsd</string>
+    <string name="khachle">Khách lẻ</string>
+    <string name="banggiachung">Bảng giá chung</string>
+    <string name="tatca">Tất cả</string>
+    <string name="chonhieu">Chọn nhiều</string>
+    <string name="diachigianhang">Địa chỉ gian hàng</string>
+    <string name="login">Đăng nhập</string>
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="dangki">Bạn chưa có tài khoản?</string>
+    <string name="hotro">Tổng đài hỗ trợ miễn cước</string>
+    <string name="phonehotro">1800 6162</string>
+    <string name="user">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="tenantcode">Code</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_banhang"
+            android:icon="@drawable/shopping24dp"
+            android:title="@string/banhang" />
+        <item
+            android:id="@+id/nav_hoadontam"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Hóa đơn tạm" />
+        <item
+            android:id="@+id/nav_lichsubanhang"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/lichsubanhang" />
+        <item
+            android:id="@+id/nav_trahang"
+            android:icon="@drawable/ic_reply_black_24dp"
+            android:title="@string/trahang" />
+
+        <item
+            android:id="@+id/nav_lapphieuthu"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="@string/lapphieuthu" />
+        <item
+            android:id="@+id/nav_baocaohangnay"
+            android:icon="@drawable/ic_poll_black_24dp"
+            android:title="@string/baocaohanggay" />
+
+        <item
+            android:id="@+id/nav_quanly"
+            android:icon="@drawable/ic_perm_identity_black_24dp"
+            android:title="@string/quanly" />
+
+        <item
+            android:id="@+id/nav_caidat"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/caidat" />
+        <item
+            android:id="@+id/nav_chatkiot"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="@string/chatkiot" />
+        <item
+            android:id="@+id/nav_dieukhoan"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/dieukhoan" />
+        <item
+            android:id="@+id/nav_goi"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/goi" />
+        <item
+            android:id="@+id/nav_dangxuat"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="@string/dangxuat" />
+
+    </group>
+
+
+
+
+
+</menu>
