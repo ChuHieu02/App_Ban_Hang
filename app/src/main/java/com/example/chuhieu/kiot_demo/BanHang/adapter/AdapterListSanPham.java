@@ -62,6 +62,7 @@ public class AdapterListSanPham extends RecyclerView.Adapter<AdapterListSanPham.
     public int getItemCount() {
         return mFilter.size();
     }
+//    tạo bộ lọc fiter de seach
     @Override
     public Filter getFilter() {
         return new Filter() {
