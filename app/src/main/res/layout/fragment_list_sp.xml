@@ -4,11 +4,77 @@
     android:layout_height="match_parent">
 
 
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/rcListSp"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/seachview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
 
-  </android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"></android.support.v7.widget.SearchView>
+
+        <ImageView
+            android:id="@+id/qrCode"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/search"
+            android:src="@drawable/qrcode" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/customer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/seachview"
+        android:background="@color/color_toolbar3">
+
+        <ImageView
+            android:id="@+id/imgperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:src="@drawable/ic_perm_identity_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgperson"
+            android:paddingStart="@dimen/dimen_8dp"
+            android:text="@string/khachle"
+            android:textColor="@color/color_text_sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tvbanggiachung"
+            android:src="@drawable/ic_near_me_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvbanggiachung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:text="@string/banggiachung"
+            android:textColor="@android:color/tertiary_text_dark" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcListSp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customer">
+
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

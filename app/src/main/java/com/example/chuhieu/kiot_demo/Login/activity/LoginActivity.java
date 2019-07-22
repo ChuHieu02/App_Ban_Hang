@@ -1,20 +1,19 @@
 package com.example.chuhieu.kiot_demo.Login.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
-import com.example.chuhieu.kiot_demo.Service.ApiService;
-import com.example.chuhieu.kiot_demo.Service.RetrofitClient;
 import com.example.chuhieu.kiot_demo.Login.model.Login;
 import com.example.chuhieu.kiot_demo.Login.model.User;
 import com.example.chuhieu.kiot_demo.MainActivity;
 import com.example.chuhieu.kiot_demo.R;
+import com.example.chuhieu.kiot_demo.Service.ApiService;
+import com.example.chuhieu.kiot_demo.Service.RetrofitClient;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,36 +39,24 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Login login = new Login();
-
                 login.setUserName(ed_taikhoan.getText().toString());
                 login.setPassword(ed_matkhau.getText().toString());
                 login.setTenantCode(ed_code.getText().toString());
                 login.setTenantId("0");
                 login.setEmail("");
                 login.setLanguage("");
-
                 setLogin(login);
             }
         });
 
     }
 
-//    public void btnlogin(View view) {
-//        Login login = new Login();
-//
-//        login.setUserName(ed_taikhoan.getText().toString());
-//        login.setPassword(ed_matkhau.getText().toString());
-//        login.setTenantCode(ed_code.getText().toString());
-//        login.setTenantId("0");
-//        login.setEmail("");
-//        login.setLanguage("");
-//
-//        setLogin(login);
-//    }
-
-    public void setLogin(Login login) {
+    public void setLogin(Login login ) {
         Retrofit retrofit = RetrofitClient.getRetrofitClient();
         ApiService apiService = retrofit.create(ApiService.class);
+
+
+
         Call<User> call = apiService.token(login);
         call.enqueue(new Callback<User>() {
             @Override
@@ -77,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (response.isSuccessful()) {
                         if (!response.body().getToken().isEmpty()) {
+
                             token = response.body().getToken();
                             startActivity(new Intent(LoginActivity.this, MainActivity.class));
                             Toast.makeText(LoginActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
