@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.chuhieu.kiot_demo.R;
 
 public class SplashscreenActivity extends AppCompatActivity {
-    private int Time_out = 1000;
+    private int Time_out = 500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

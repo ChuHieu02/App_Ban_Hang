@@ -3,15 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clickable="true"
+    android:background="@drawable/button_background"
     android:padding="@dimen/dimen_4dp">
 
     <ImageView
+        android:layout_centerVertical="true"
         android:id="@+id/img"
         android:layout_width="@dimen/dimen_image"
         android:layout_height="@dimen/dimen_image"
         android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
+        android:layout_centerVertical="true"
         android:id="@+id/LNtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,12 +24,16 @@
         android:orientation="vertical">
 
         <TextView
+            android:maxWidth="250dp"
+            android:maxLines="2"
+            android:textStyle="bold"
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/title_sp" />
 
         <TextView
+            android:maxWidth="220dp"
             android:id="@+id/tv_code"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -43,13 +50,17 @@
         android:orientation="vertical">
 
         <TextView
+            android:text="100.000.000.0 d"
+            android:textStyle="bold"
             android:id="@+id/tv_price"
             android:layout_width="wrap_content"
+            android:maxWidth="120dp"
             android:layout_height="match_parent"
-            android:text="@string/price_sp"
             android:textColor="@color/color_text_sp" />
 
         <TextView
+
+            android:maxWidth="120dp"
             android:id="@+id/tv_number"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

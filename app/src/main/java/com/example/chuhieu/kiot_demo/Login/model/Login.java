@@ -1,12 +1,12 @@
 package com.example.chuhieu.kiot_demo.Login.model;
 
 public class Login {
-    String UserName ;
-    String Password ;
-    String TenantCode ;
-    String TenantId ;
-    String Email  ;
-    String Language ;
+    String UserName;
+    String Password;
+    String TenantCode;
+    String TenantId;
+    String Email;
+    String Language;
 
     public Login(String userName, String password, String tenantCode, String tenantId, String email, String language) {
         UserName = userName;

@@ -4,28 +4,34 @@
     android:layout_height="match_parent">
 
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/seachview"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="?actionBarSize">
 
         <android.support.v7.widget.SearchView
+            android:layout_gravity="center"
+            android:layout_weight="9"
             android:id="@+id/search"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"></android.support.v7.widget.SearchView>
+            android:layout_centerVertical="true">
+
+        </android.support.v7.widget.SearchView>
 
         <ImageView
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:id="@+id/qrCode"
-            android:layout_width="40dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="4dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/search"
             android:src="@drawable/qrcode" />
 
-    </RelativeLayout>
+    </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/customer"
         android:layout_width="match_parent"
@@ -33,31 +39,19 @@
         android:layout_below="@+id/seachview"
         android:background="@color/color_toolbar3">
 
-        <ImageView
-            android:id="@+id/imgperson"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/dimen_8dp"
-            android:src="@drawable/ic_perm_identity_black_24dp" />
-
         <TextView
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/imgperson"
             android:paddingStart="@dimen/dimen_8dp"
             android:text="@string/khachle"
             android:textColor="@color/color_text_sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/tvbanggiachung"
-            android:src="@drawable/ic_near_me_black_24dp" />
-
         <TextView
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableLeft="@drawable/ic_near_me_black_24dp"
             android:id="@+id/tvbanggiachung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,10 +64,12 @@
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/dimen_4dp"
         android:id="@+id/rcListSp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/customer">
+        android:layout_below="@id/customer"
+        android:background="@android:color/white">
 
     </android.support.v7.widget.RecyclerView>
 

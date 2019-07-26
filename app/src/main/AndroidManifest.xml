@@ -5,8 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/namishop"
@@ -14,8 +12,16 @@
         android:roundIcon="@mipmap/namishop_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.login">
-        <activity android:name=".BarCode.BarCodeActivity"></activity>
-        <activity android:name=".Login.activity.SplashscreenActivity">
+        <activity
+            android:name=".Bill.BillActivity"
+            android:theme="@style/AppTheme.kiot"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BarCode.BarCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.activity.SplashscreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +30,12 @@
         </activity>
         <activity
             android:name=".Login.activity.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.login" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.kiot" />
-        <!--<meta-data-->
-            <!--android:name="com.google.android.gms.vision.DEPENDENCIES"-->
-            <!--android:value="barcode" />-->
-
     </application>
 
 </manifest>

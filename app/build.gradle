@@ -31,12 +31,13 @@ dependencies {
 
     // Retrofit and OkHttp
     // OkHttp interceptors for logging
+    implementation "com.squareup.picasso:picasso:2.5.2"
     implementation "com.squareup.retrofit2:retrofit:2.4.0"
     implementation "com.squareup.retrofit2:converter-gson:2.3.0"
     implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.10.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    implementation "com.squareup.picasso:picasso:2.5.2"
+
 
 //barcode scanner
     implementation 'com.google.android.gms:play-services-vision:11.0.2'

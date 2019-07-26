@@ -10,5 +10,10 @@
     <color name="bg_login">#3a9456</color>
     <color name="bg_dangki">#6cdc7e</color>
 
+    <color name="btn_dathang">#0288d1</color>
+    <!--btn-->
+
+
+
 
 </resources>

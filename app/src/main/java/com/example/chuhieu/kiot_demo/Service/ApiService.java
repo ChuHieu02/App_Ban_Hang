@@ -20,7 +20,7 @@ public interface ApiService {
 
     @Headers({"Content-Type: application/json"})
     @POST("api/Category/ProductList")
-    Call<List<CategoryResponse>> body1(@Header("Authorization") String auth, @Body Category category);
+    Call<List<CategoryResponse>> body(@Header("Authorization") String auth, @Body Category category);
 
 
 }
